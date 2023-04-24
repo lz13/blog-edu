@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get "/blog_posts/:id", to: "blog_posts#show", as: :blog_post
   # PATCH/PUT /blog_posts/1
   patch "/blog_posts/:id", to: "blog_posts#update"
+  # DELETE /blog_posts/1
+  delete "/blog_posts/:id", to: "blog_posts#destroy"
   # GET /blog_posts/1/edit
   get "/blog_posts/:id/edit", to: "blog_posts#edit", as: :edit_blog_post
   # POST /blog_posts
